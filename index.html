@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script/script.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="City"
+          maxlength="12"
+        />
+      </header>
+      <div class="weather-box">
+        <div class="status-img-with-text">
+          <img
+            src="https://openweathermap.org/img/wn/04d@2x.png"
+            alt="weather"
+            id="weather-image"
+          />
+          <p id="weather-status">Cloudy</p>
+        </div>
+        <div class="current-temperature">
+          <span id="curr-temp">1</span>° / <span id="feel-temp">-10</span>°
+        </div>
+        <p class="current-temperature-text">Temperature / Feels like</p>
+        <div class="location-other-box">
+          <div class="other-box">
+            <p id="humidity-text">Humidity: <span id="humidity">3</span></p>
+            <p id="wind-speed-text">Wind Speed: <span id="wind">5</span> m/s</p>
+          </div>
+          <div class="location-box">
+            <p id="city">Vilnius</p>
+            <p id="country">Lithuania</p>
+            <p id="coords">
+              <span id="lat">53</span>, <span id="long">45</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert">
+      <h3>Error message</h3>
+    </div>
+  </body>
+</html>
